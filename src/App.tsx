@@ -2,43 +2,18 @@ import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
+function App(props) {
+    return (
+    <section className="patient_card">
+      <img src={props.photo} alt="" className="patient_card__photo"/>
+      <article className="patient_card__article">
+        <p><b>Имя: </b>{props.name}</p>
+        <p><b>Фамилия: </b>{props.surname}</p>
+        <p><b>Год рождения: </b>{props.birth}</p>
+        <p><b>Пол: </b>{props.gender}</p>
+        <p><b>Диагноз: </b>{props.illness}</p>
+      </article>
+    </section>
   )
 }
 

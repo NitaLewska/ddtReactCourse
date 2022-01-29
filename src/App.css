@@ -1,42 +1,39 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Comforter+Brush&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.patient_card {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 230px;
+  width:500px;
+  padding: 15px;
+  background-color:rgb(253, 238, 220);
+  margin: 0 auto;
+  margin-top: 20vh;
+  border: rgb(218, 206, 206) 2px solid;
+  line-height: 20px;
+  box-shadow: 3px 5px 58px -11px rgba(0,0,0,0.30);
+  border-radius:10px;
+  align-content: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.patient_card__photo {
+  height: 200px;
+  width: 150px;
+  background-color:aquamarine;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.patient_card__article {
+  margin-left: 40px;
 }
 
-button {
-  font-size: calc(10px + 2vmin);
+.patient_card p b {
+  font-family: 'Amatic SC', cursive;
+}
+
+.patient_card p {
+  font-family: 'Comforter Brush', cursive;
+  font-size: 30px;
+  line-height: 34px;
+  ;
 }
