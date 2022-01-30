@@ -1,8 +1,6 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import './Patient_card.css'
 
-function App(props) {
+function Patient_card(props) {
     return (
     <section className="patient_card">
       <img src={props.photo} alt="" className="patient_card__photo"/>
@@ -17,4 +15,4 @@ function App(props) {
   )
 }
 
-export default App
+export default Patient_card
