@@ -6,7 +6,7 @@ import Timer from './Timer'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Patient_card name="Бла" surname="Блабла" birth="неизвестен" gender="неизвестен" illness="депресука" photo="owl_depressed.jpg"/>
+    <Patient_card name="Бла" surname="Блабла" birth="неизвестен" gender="неизвестен" illness="депресука" photo="./src/owl_depressed.jpg"/>
   </React.StrictMode>,
   document.getElementById('root')
 )
