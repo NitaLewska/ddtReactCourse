@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import Patient_card from './Patient_card'
-import Timer from './Timer'
+import Patient_card from './PatientCard/PatientCard'
+import Timer from './Timer/Timer'
 import photo from './img/owl_depressed.jpg'
 
 ReactDOM.render(

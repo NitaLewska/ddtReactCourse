@@ -1,5 +1,5 @@
 import { ReactChild, ReactFragment, ReactPortal } from 'react'
-import './Patient_card.css'
+import './PatientCard.css'
 
 function Patient_card(props: { photo: string | undefined; name: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined; surname: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined; birth: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined; gender: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined; illness: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined }) {
     return (
