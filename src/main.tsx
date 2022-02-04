@@ -1,15 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import Patient_card from './PatientCard/PatientCard'
-import Timer from './Timer/Timer'
-import photo from './img/owl_depressed.jpg'
+
+import App from './App'
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <Patient_card name="Бла" surname="Блабла" birth="неизвестен" gender="неизвестен" illness="депресука" photo={photo}/>
+    <App />
+   {/*  <Patient_card name="Бла" surname="Блабла" birth="неизвестен" gender="неизвестен" illness="депресука" photo={photo}/> */}
   </React.StrictMode>,
   document.getElementById('root')
 )
-
-setInterval(Timer, 1000);
