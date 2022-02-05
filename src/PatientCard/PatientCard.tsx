@@ -1,14 +1,16 @@
-import { ReactChild, ReactFragment, ReactPortal } from 'react'
-import './PatientCard.css'
+import './PatientCard.css';
+import PatientCardRow from "../PatientCardRow/PatientCardRow"
 
 interface MyProps {
   name: string;
   surname: string;
-  birth: number;
+  birth: number|string;
   gender: string;
   illness: string;
   photo: string;
 }
+
+
 
 
 function PatientCard({name, surname, birth, gender, illness, photo}:MyProps) {
@@ -16,11 +18,11 @@ function PatientCard({name, surname, birth, gender, illness, photo}:MyProps) {
     <section className="patient_card">
       <img src={photo} alt="" className="patient_card__photo"/>
       <article className="patient_card__article">
-        <p><b>Имя: </b>{name}</p>
-        <p><b>Фамилия: </b>{surname}</p>
-        <p><b>Год рождения: </b>{birth}</p>
-        <p><b>Пол: </b>{gender}</p>
-        <p><b>Диагноз: </b>{illness}</p>
+        <PatientCardRow text="Имя: " propName={name}  />
+        <PatientCardRow text="Фамилия: " propName={surname}  />
+        <PatientCardRow text="Год рождения: " propName={birth}  />
+        <PatientCardRow text="Пол: " propName={gender}  />
+        <PatientCardRow text="Диагноз: " propName={illness}  />
       </article>
     </section>
   )
